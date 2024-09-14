@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Màu nền trang */
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-content h1 {
+    font-size: 32px;
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    color: #65676b;
+    font-size: 16px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-box input, .login-box button, .Create-box {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.login-box input {
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    background-color: #165eab;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links a {
+    display: block;
+    color: #1877f2;
+    margin: 10px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.Create-box {
+    background-color: #0bb446;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .left-content p {
+        font-size: 14px;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content h1 {
+        font-size: 24px;
+    }
+
+    .left-content p {
+        font-size: 12px;
+    }
+
+    .login-box {
+        padding: 10px;
+    }
+
+    .login-box input, .login-box button, .Create-box {
+        font-size: 14px;
+    }
+}
