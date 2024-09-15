@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.top, .bottom {
+    text-align: center;
+    padding: 30px;
+}
+
+.bottom {
+    margin-top: auto; 
+}
+
+.bottom p {
+    margin-bottom: 10px;
+}
+
+.bottom a {
+    display: inline-block; 
+    margin: 0 4px;
+}
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px; 
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    max-width: 180px;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    border-radius: 10px; 
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-box input, .login-box button, .create-box {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-box input {
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px; 
+}
+
+.login-box button:hover {
+    background-color: #165eab;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.link a {
+    display: block;
+    color: black;
+    margin: 10px 0;
+}
+
+.bottom a {
+    color: grey;
+}
+
+.create-box {
+    display: block; 
+    background-color: #ffffff;
+    border: 1px solid #ddd; 
+    color: #165eab;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50px; 
+    padding: 10px;
+    margin: 6px 0;
+    text-align: center; 
+}
+
+.create-box:hover {
+    background-color: #f0f2f5; 
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    .create-box {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 10px;
+    }
+
+    .login-box input, .login-box button, .create-box {
+        font-size: 14px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    .create-box {
+        margin-top: 50px;
+    }
+
+}
