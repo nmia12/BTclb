@@ -140,6 +140,12 @@ a{
     .left img{
         max-width: 100px;
         height: auto;
+<<<<<<< HEAD
+    }
+    .create_box{
+        margin-top: 150px;
+=======
+>>>>>>> e4f94bda1536187053acacf5809469a0116050e3
     }
     .create_box{
         margin-top: 150px;
