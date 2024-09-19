@@ -27,32 +27,36 @@ body{
 
 .top, .bot{
     text-align: center;
-    color: #272727;
+    color: #555555;
     padding: 10px;
+    font-size: 19px
 }
 .top{
     top: 0;
     position: absolute;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .bot{
     bottom: 0;
     position: absolute;
     width:100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
-.bot p{
-    margin-bottom: 20px;;
+.meta-logo img {
+    max-width: 90px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    align-items:center
 }
 .bot a{
     color:#787878;
     margin: 0px 7px;
 }
 
-img{
-    max-width: 100px;
+.left img{
+    max-width: 160px;
     height: auto;
 }
 
@@ -64,7 +68,7 @@ img{
 }
 
 .left{
-    justify-content: center;
+    justify-content: left;
 }
 
 .right{
@@ -133,8 +137,11 @@ a{
         justify-content: center;
         margin-bottom: 60px;
     }
-
+    .left img{
+        max-width: 100px;
+        height: auto;
+    }
     .create_box{
-        margin-top: 90px;
+        margin-top: 150px;
     }
 }
