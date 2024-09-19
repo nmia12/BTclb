@@ -1,174 +1,140 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%; 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
     margin: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5; 
-    display: flex;
-    flex-direction: column; 
-}
-
-.top, .bottom {
-    text-align: center;
-    padding: 30px;
-}
-
-.bottom {
-    margin-top: auto; 
-}
-
-.bottom p {
-    margin-bottom: 10px;
-}
-
-.bottom a {
-    display: inline-block; 
-    margin: 0 4px;
-}
-.main {
-    flex: 1;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px; 
+    position: relative;
 }
 
-.boxes {
+.main{
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
+    flex-direction:row;
     width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top, .bot{
+    text-align: center;
+    color: #272727;
+    padding: 10px;
+}
+.top{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.bot{
+    bottom: 0;
+    position: absolute;
+    width:100%;
+    margin-bottom: 5px;
+}
+.bot p{
+    margin-bottom: 20px;;
+}
+.bot a{
+    color:#787878;
+    margin: 0px 7px;
 }
 
 img{
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
-    max-width: 180px;
 }
 
-.left-side, .right-side {
+.left, .right{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right-side {
-    display: flex;
+.left{
     justify-content: center;
-    align-items: center;
 }
 
-.login-box {
-    border-radius: 10px; 
-    width: 100%;
-    max-width: 360px;
-    padding: 20px;
-    text-align: center;
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.login-box input, .login-box button, .create-box {
+.right input, .right button, .create_box{
     width: 100%;
-    padding: 10px;
-    margin: 6px 0;
     box-sizing: border-box;
-    border-radius: 8px;
+    font-size: 20px
+}
+form input{
+    padding: 20px;
+    margin: 8px 0;
+    border: 2px solid #e5e4e4;
+    border-radius: 10px;
 }
 
-.login-box input {
-    border: 1px solid #ddd;
-}
-
-.login-box button {
-    background-color: #1877f2;
-    color: #ffffff;
+form button{
+    padding: 15px;
+    background-color: #1876f3;
+    color: white;
     border: none;
+    border-radius: 30px;
+    margin: 8px 0 20px 0;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 50px; 
+    font-size: 20px;
+}
+button:hover{
+    background-color: #10478f;
 }
 
-.login-box button:hover {
-    background-color: #165eab;
+a{
+    text-decoration: none;
 }
 
-a {
-    text-decoration: none; 
-}
-
-.link a {
+.links a{
     display: block;
-    color: black;
-    margin: 10px 0;
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 25px;
 }
-
-.bottom a {
-    color: grey;
-}
-
-.create-box {
-    display: block; 
-    background-color: #ffffff;
-    border: 1px solid #ddd; 
-    color: #165eab;
+.create_box{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4793f7;
+    border-radius: 30px;
+    color: #1876f3;
     cursor: pointer;
-    font-size: 14px;
-    border-radius: 50px; 
-    padding: 10px;
-    margin: 6px 0;
-    text-align: center; 
 }
 
-.create-box:hover {
-    background-color: #f0f2f5; 
+.links a:hover{
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .boxes {
+@media(max-width: 768px){
+    .main{
         flex-direction: column;
         align-items: center;
     }
-
-    .login-box {
-        padding: 15px;
+    .left {
+        justify-content: center;
+        margin-bottom: 60px;
     }
 
-    img {
-        width: 90px;
+    .create_box{
+        margin-top: 90px;
     }
-
-    .create-box {
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .login-box {
-        padding: 10px;
-    }
-
-    .login-box input, .login-box button, .create-box {
-        font-size: 14px;
-    }
-
-    img {
-        width: 90px;
-    }
-
-    .create-box {
-        margin-top: 50px;
-    }
-
 }
