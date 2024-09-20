@@ -20,8 +20,9 @@ body{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    justify-content: center;  
+    justify-content: flex-start;  
     align-items: center;
+    height: 100vh;
 }
 
 .main_content {
@@ -33,7 +34,7 @@ body{
     max-width: 1200px; 
     justify-content: center; 
     align-items: center;               
-    height: auto;            
+    height: auto;        
 }
 
 .top, .bot{
@@ -45,13 +46,13 @@ body{
 .top{
     margin-top: 10px;
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .bot{
     margin-bottom: 10px;
     width:100%;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .meta-logo {
     display: flex;
