@@ -15,10 +15,6 @@ body{
     position: relative;
 }
 
-body {
-    overflow: hidden;  
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -150,9 +146,6 @@ a{
 }
 
 @media(max-width: 768px){
-    body {
-        overflow: hidden; 
-    }
     .main {
         min-height: 100vh;
         flex-direction: column;
