@@ -16,24 +16,14 @@ body{
 }
 
 body {
-    overflow: hidden;  /* Ẩn cuộn */
+    overflow: hidden;  
 }
 
-
-/* .main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: flex-start;  
-    align-items: center;
-    height: 100vh;
-} */
 .main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;  /* Thay đổi từ height sang min-height */
+    min-height: 100vh; 
     justify-content: flex-start;  
     align-items: center;
 }
@@ -161,10 +151,10 @@ a{
 
 @media(max-width: 768px){
     body {
-        overflow: hidden;  /* Ẩn cuộn */
+        overflow: hidden; 
     }
     .main {
-        min-height: 100vh;  /* Đảm bảo không cần cuộn */
+        min-height: 100vh;
         flex-direction: column;
         align-items: center;
     }
@@ -179,11 +169,7 @@ a{
     .bot {
         margin: 30px 0 10px 0; 
     }
-}
     
-    /* body{
-        height: 100vh;
-    } */
     .main{
         flex-direction: column;
         align-items: center;
@@ -191,17 +177,7 @@ a{
     .main_content{
         flex-direction: column;
         align-items: center;
-        /* heigth: 85%; */
     }
-    /* .top {
-        font-size: 16px;
-        margin: 10px 0 30px 0;
-        display: block;
-        height: 5%;
-    }
-    .bot{
-        height: 10%;
-    } */
     .left img{
         max-width: 100px;
         height: auto;
@@ -211,7 +187,7 @@ a{
         justify-content: center;
     }
     .create_box{
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .bot{
         margin: 30px 0 10px 0; 
