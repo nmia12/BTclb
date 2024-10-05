@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background-color: #213a57;
@@ -13,26 +13,28 @@ body{
 }
 .main{
     width: 100%;
-    margin: 0 auto;
+    margin: 20px 0;
     flex: 1;
     display: flex;
 }
 .footer{
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
     padding: 10px;
     background-color: #aff1bf;
     text-align: center;
+    border-radius: 5px;
 }
 
 
 
 .left{
-    max-width: 800px;
+    max-width: 500px;
     width: 30%;
     background-color: #aff1bf;
     box-shadow: 0 0 10px #91d3a1;
     margin: 10px 0;
+    border-radius: 25px;
 }
 .ava{
     position: relative;
@@ -48,6 +50,8 @@ body{
 .ava img {
     width: 100%;
     height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .display{
@@ -82,22 +86,25 @@ body{
     margin: 5px 0;
 }
 .percent{
-    background-color: #7ba5a8;
+    background-color:#858f9b;
     border-radius: 25px;
     margin: 5px 20px;
 }
-.per, .lev{
-    background-color: #45dfb3;
-    border-radius: 25px;
+.per{
+    padding: 2px 0;;
+    color: #aff1bf;
+    background-color: #0b6477;
+    border-radius: 20px;
     margin: 0;
 }
 .level {
-    background-color: #7ba5a8;
+    background-color: #858f9b;
     margin: 5px 30px; 
     border-radius: 25px;
 }
 .lev {
-    background-color: #45dfb3;
+    color: #aff1bf;
+    background-color: #0b6477;
     margin: 0;
     height: 25px; 
     border-radius: 25px;
@@ -153,23 +160,19 @@ hr{
 }
 
 .experience{
+    border-radius: 25px;
     background-color: #aff1bf;
     margin-bottom: 30px;
     box-shadow: 0 0 10px #91d3a1;
 }
 
 .education{
+    border-radius: 25px;
     background-color: #aff1bf;
     margin-bottom: 30px;
     box-shadow: 0 0 10px #91d3a1;
 }
-.current {
-    background-color: #45dfb3; /* Màu nền */
-    border-radius: 25px; /* Bo góc */
-    padding: 5px 10px; /* Thêm khoảng cách bên trong */
-    color: white; /* Màu chữ */
-    font-weight: bold; /* Chữ đậm */
-}
+
 
 @media (max-width: 700px) {
     .main {
@@ -179,6 +182,9 @@ hr{
     .left, .right {
         width: 100%;
         margin: 0 auto;
+    }
+    .experience, .education{
+        margin-bottom: 4px;
     }
 }
 
